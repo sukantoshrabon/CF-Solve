@@ -4,7 +4,7 @@ using namespace std;
 using ll = long long;
 
 void solve() {
-    cout << "Munnar boga nai" << endl;
+    cout << "Hello Github" << endl;
     
 }
 
