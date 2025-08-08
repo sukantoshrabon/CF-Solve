@@ -4,8 +4,7 @@ using namespace std;
 using ll = long long;
 
 void solve() {
-    cout << "Hello Github" << endl;
-    
+    cout << "Hello Github"<< endl;
 }
 
 int main() {
