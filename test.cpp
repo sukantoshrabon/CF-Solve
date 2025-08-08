@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
@@ -13,10 +14,9 @@ int main() {
     cout.tie(0);
 
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--) {
         solve();
     }
     return 0;
 }
-
