@@ -1,5 +1,0 @@
-{
-    "shell_cmd": "g++ -std=c++17 -O2 -pipe \"$file\" -o \"$file_base_name\" && ./$file_base_name < input.in > output.out",
-    "working_dir": "${file_path}",
-    "selector": "source.c++, source.cpp, source.cxx"
-}

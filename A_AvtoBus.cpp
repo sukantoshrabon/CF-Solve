@@ -4,14 +4,19 @@ using namespace std;
 using ll = long long;
 
 void solve() {
-    int n;
+    ll n;
     cin>>n;
-    set<int>a;
-    for(int i=0; i<n; i++){
-        int x; cin >> x;
-        a.insert(x);
+    if(n%2 != 0 || n<4){
+        cout << "-1" << endl;
+        return;
     }
-    cout << a.size() << endl;
+    if(n==4){
+        cout << "1 1" << endl;
+        return;
+    }
+    ll minn = n/4;
+    ll maxx = (n+5) / 6;
+    cout << maxx << " " << minn << endl; 
 }
 
 int main() {
@@ -20,7 +25,7 @@ int main() {
     cout.tie(0);
 
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--) {
         solve();
     }
