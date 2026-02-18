@@ -23,8 +23,6 @@ void solve(){
         return;
     }
 
-    // cout << r << ' ' << l << '\n';
-    // cout << r - l << '\n';
     cout << r - l + 1 << endl;
 
     for (int i = l; i <= r; i++)
