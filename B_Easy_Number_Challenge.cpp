@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+using ll = long long;
+const int MOD = 1 << 30;
+
+void solve() {
+    int a,b,c;
+    cin>>a>>b>>c;
+    int MAX = a * b * c;
+    vector<int> d(MAX + 1, 0);
+
+    for (int i = 1; i <= MAX; i++) {
+        for (int j = i; j <= MAX; j += i) {
+            d[j]++;
+        }
+    }
+    ll ans = 0;
+    for (int i = 1; i <= a; i++) {
+        for (int j = 1; j <= b; j++) {
+            for (int k = 1; k <= c; k++) {
+                ll mul = 1LL * i * j * k;
+                ans += d[mul];
+                if (ans >= MOD) ans -= MOD;
+            }
+        }
+    }
+
+    cout << ans % MOD << endl;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+
+    int t = 1;
+    // cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}

@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/home/shrabon/Documents/Code/CF Solve/test.cpp","tests":[{"id":1760369182687,"input":"3\n1\n2\n3\n","output":"1\n-1\n2 9 7\n4 6 3\n1 8 5\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/shrabon/Documents/Code/CF Solve/test.cpp","group":"local","local":true}

@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+using ll = long long;
+
+void solve() {
+    int n,k; cin >> n >> k;
+    int a[n];
+    for(int i=0; i<n; i++){
+        cin >> a[i];
+    }
+    sort(a,a+n);
+    if(k == 0) {
+        if(a[0] > 1) {
+            cout << 1 << endl;
+        } else {
+            cout << -1 << endl;
+        }
+        return;
+    }
+    if(k > n){
+        cout << -1 << endl;
+        return;
+    }
+    int ans = 0;
+    int m = a[k-1];
+    vector<int>b;
+    for(int i=0; i<n; i++){
+        if(a[i] <= m) {
+            b.push_back(a[i]);
+        }
+    }
+    if(k == b.size()){
+        cout << m << endl; 
+    } else {
+        cout << -1 << endl;
+    }
+
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int t = 1;
+    //cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
